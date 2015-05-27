@@ -2371,7 +2371,7 @@ span.color-red {
   padding-bottom: 0;
 }
 .mainmenu-wrapper {
-  background-color: #FFF;
+  background-color: #27ad60;
   border-bottom: 4px solid #4f8db3;
   z-index: 4;
 }
@@ -2399,18 +2399,18 @@ span.color-red {
 .mainmenu .mainmenu-submenu-inner > li > a {
   font-size: 1.2em;
   padding: 1.2em 1.5em;
-  color: #999;
+  color: fff;
   display: inline-block;
   text-decoration: none;
 }
 .mainmenu > ul > li > a:hover,
 .mainmenu .mainmenu-submenu-inner > li > a:hover {
-  color: #4f8db3;
+  color: #fff;
   text-decoration: none;
 }
 .mainmenu > ul > li.active > a,
 .mainmenu .mainmenu-submenu-inner > li.active > a {
-  color: #4f8db3;
+  color: #fff;
   font-weight: 600 !important;
 }
 .mainmenu > ul > li.mainmenu-open a,
@@ -2423,7 +2423,7 @@ span.color-red {
 .mainmenu .mainmenu-submenu {
   display: none;
   position: absolute;
-  background: #4f8db3;
+  background: #27ad60;
   width: 100%;
   left: 0;
   z-index: 999;
@@ -2457,7 +2457,7 @@ span.color-red {
   padding-bottom: 3em;
 }
 .mainmenu-submenu h4 {
-  color: #bad2e1;
+  color: #fff;
   padding: 1em 0 0.6em;
   margin-left: 20px;
   font-size: 160%;
