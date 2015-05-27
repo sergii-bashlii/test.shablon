@@ -2,7 +2,8 @@
 	General Style
 --------------------------------------------------------------------------*/
 body {
-  background: url(../img/page-background.png);
+  /*background: url(../img/page-background.png);*/
+  background-color: sequence
 }
 .section {
   padding: 30px 0;
@@ -79,13 +80,14 @@ h1 {
   font-weight: 800;
 }
 h2 {
-  color: #53555c;
+  color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-size: 2em;
   border-bottom: 2px solid #53555c;
   line-height: 1.5em;
   margin: 30px 0;
   padding-left: 10px;
+  text-align: center;
 }
 h3 {
   font-family: 'Open Sans', sans-serif;
@@ -98,7 +100,7 @@ h4 {
   margin-bottom: 10px;
 }
 a {
-  color: #4f8db3;
+  color: #fff;
 }
 a:hover {
   color: #2f556d;
@@ -2407,6 +2409,7 @@ span.color-red {
 .mainmenu .mainmenu-submenu-inner > li > a:hover {
   color: #fff;
   text-decoration: none;
+  background-color: #2C3E50;
 }
 .mainmenu > ul > li.active > a,
 .mainmenu .mainmenu-submenu-inner > li.active > a {
@@ -2666,4 +2669,16 @@ span.color-red {
 }
 .dropdown.open a.dropdown-toggle .caret {
   border-top: 4px solid #FFF;
+}
+
+.section, .partners{
+  background-color: #27AD60;
+}
+
+#proekt{
+  background-color: #2C3E50;
+}
+
+.sequence{
+  background-color: #27AD60;
 }
