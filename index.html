@@ -21,6 +21,35 @@
 		<link rel="stylesheet" href="css/main.css">
 
         <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+        	<script>
+$(document).ready(function() {   
+    $('a[name=modal]').click(function(e) {
+    e.preventDefault();
+    var id = $(this).attr('href');
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+    $('#mask').css({'width':maskWidth,'height':maskHeight});
+    $('#mask').fadeIn(1000); 
+    $('#mask').fadeTo("slow",0.8); 
+    var winH = $(window).height();
+    var winW = $(window).width();
+    $(id).css('top',  winH/2-$(id).height()/2);
+    $(id).css('left', winW/2-$(id).width()/2);
+    $(id).fadeIn(2000); 
+    });
+    $('.window .close').click(function (e) { 
+    e.preventDefault();
+    $('#mask, .window').hide();
+    }); 
+    $('#mask').click(function () {
+    $(this).hide();
+    $('.window').hide();
+    }); 
+   });  
+</script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -184,6 +213,12 @@
         </div>
         <!-- End Homepage Slider -->
 
+
+        
+
+
+
+
 		<!-- about_as -->
         <div class="section">
 	    	<div class="container">
@@ -193,6 +228,7 @@
 							<h2>О ПРОЕКТЕ</h2>
 							<p>TopKharkovTeam с гордостью представляет качественный новый проект, который будет делать жизнь Харьковчан и гостей города проще и интереснее! Для нас, как разработчиков, первоочередную важность имела доступность данного приложения, поэтому оно является абсолютно бесплатным для пользователей самых популярных мобильных платформ.</p>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -211,7 +247,7 @@
 		        			<br>
 		        			<br>
 		        			<p>Разрабатывая по-настоящему массовое приложение наша команда не могла упустит из виду самую популярную мобильную платформу в Мире - Android. <!-- Наши программисты и дизайнеры сделали все, чтобы ХарьковТранспорт стабильно работал и великолепно смотрелся на всем широком спектре девайсов, работающих под детищем Google. --></p>
-		        			<a href="#" class="btn">Увеличить</a>
+		        			<a  class="btn" href="#Android" name="modal">Увеличить</a>
 		        		</div>
 	        		</div>
 	        		<div class="col-md-4 col-sm-6">
@@ -220,7 +256,7 @@
 		        			<h3>Web-версия:</h3>
 		        			<br>
 		        			<p>На большом экране можно комфортно составить и ознакомиться с маршрутом, обратив внимание на все ориентиры. Особенно, если вы составляете маршрут большой компанией друзей. <!-- Потом можно в два клика передать составленный маршрут в свой смартфон. --></p>
-		        			<a href="#" class="btn">Увеличить</a>
+		        			<a class="btn" href="#Web" name="modal">Увеличить</a>
 		        		</div>
 	        		</div>
 	        		<div class="col-md-4 col-sm-6">
@@ -229,7 +265,7 @@
 		        			<h3>IOS:</h3>
 		        			<br>
 		        			<p>Стабильность в работе, практичность в использовании, безупречность в дизайне - именно эти три принципа были положены нашей командой в фундамент ХарьковТранспорт под iOS.</p>
-		        			<a href="#" class="btn">Увеличить</a>
+		        			<a class="btn" href="#Iphone" name="modal">Увеличить</a>
 		        		</div>
 	        		</div>
 	        	</div>
@@ -250,6 +286,29 @@
 			</div>
 		</div>
 		<!-- End Call to Action Bar -->
+
+
+
+		<!-- Само окно -->
+<div id="boxes">  
+<div id="Android" class="window"> <img src="img/service-icon/Android.jpg">
+
+</div>
+
+<div id="Web" class="window"> <img src="img/service-icon/Web.jpg">
+
+</div>
+
+<div id="Iphone" class="window"> <img src="img/service-icon/Iphone.jpg">
+
+</div>
+</div>
+<!-- Маска, затемняющая фон -->
+<div id="mask"></div>
+
+
+
+
 
 		<!-- Testimonials -->
 	    <div class="section">

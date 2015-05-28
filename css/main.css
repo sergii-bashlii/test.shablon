@@ -2682,3 +2682,63 @@ span.color-red {
 .sequence, .service-wrapper{
   background-color: #27AD60;
 }
+
+
+body {
+    font-family:verdana;
+    font-size:15px;
+    }  
+    .link {color:#fff; text-decoration:none}
+    .link:hover {color:#fff; text-decoration:underline}  
+#mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+    display:none;
+    }
+#boxes .window {
+    position:fixed;
+    left:0;
+    top:0px;
+    -top: 40px;
+    width:440px;
+    height:200px;
+    display:none;
+    z-index:9999;
+    overflow: hidden;
+    }  
+#boxes #Android {
+    width:1200px; 
+    height:900px;
+    background-color:#ffffff;
+    }  
+
+    #boxes #Web {
+    width:1200px; 
+    height:900px;
+    background-color:#ffffff;
+    }  
+
+    #boxes #Iphone {
+    width:1200px; 
+    height:900px;
+    background-color:#ffffff;
+    }  
+
+.top {
+    position:absolute;
+    left:0;
+    top:0;
+    width:370px;
+    height:30px;
+    background: #0085cc;
+    padding: 8px 20px 6px 10px;
+    }
+.close {
+    float:right;
+    }
+.content {
+    padding-top: 35px;
+}
