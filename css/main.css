@@ -2679,6 +2679,6 @@ span.color-red {
   background-color: #2C3E50;
 }
 
-.sequence{
+.sequence, .service-wrapper{
   background-color: #27AD60;
 }
